@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mindful Journey | Level 01</title>
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="icon" href="assets/ninja.svg" type="image/svg">
+    </head>
+
+    <body class="body" onload="idleAnimation();" onkeyup="keyPress(event);">
+        <div class="bg" id="bg">
+            <img src="assets/idle/Idle (1).png" class="ninja" id="ninja">
+            <span class="score" id="score"></span>
+            <p class="lt" id="title">Level 01</p>
+        </div>
+
+        <div class="end" id="end">
+            <div class="hero">Your mind is at ease and calm.</div>
+            <div class="level" id="level"></div>
+            <button class="replay" id="level2"><a href="level2.html" style="text-decoration: none; color: white;">LEVEL 2</a></button>
+        </div>
+
+        <div class="dead" id="dead">
+            <div class="hero">Make a peaceful mind</div>
+            <div class="level" id="deadlevel"></div>
+            <div id="reduce" style="font-family: sans-serif; font-size: 30px; color: black;"></div>
+            <button class="replay" onclick="reload();">REPLAY</button>
+        </div>
+
+        <script src="js/index.js"></script>
+    </body>
+</html>
